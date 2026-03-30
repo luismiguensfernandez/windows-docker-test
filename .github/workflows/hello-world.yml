@@ -8,7 +8,7 @@ on:
 
 jobs:
   hello-world:
-    runs-on: windows-2025-vs2026
+    runs-on: ubuntu-latest
     container:
       image: ubuntu:latest
     steps:
