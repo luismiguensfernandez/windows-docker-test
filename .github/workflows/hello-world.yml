@@ -1,0 +1,17 @@
+name: Hello World Container
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+    container:
+      image: redhat/ubi10:latest-source
+    steps:
+      - name: Print hello world
+        shell: sh
+        run: echo "hello world"
